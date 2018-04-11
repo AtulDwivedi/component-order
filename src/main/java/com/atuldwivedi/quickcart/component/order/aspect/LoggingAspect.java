@@ -1,4 +1,4 @@
-package com.atuldwivedi.quickcart.order.aspect;
+package com.atuldwivedi.quickcart.component.order.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggingAspect {
 
-	@Pointcut("execution(* com.atuldwivedi.quickcart.order..*.*(..))")
+	@Pointcut("execution(* com.atuldwivedi.quickcart.component.order..*.*(..))")
 	public void allMethods() {};
 	
 	@Before("allMethods()")

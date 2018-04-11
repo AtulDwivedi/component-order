@@ -1,8 +1,8 @@
-package com.atuldwivedi.quickcart.order.service;
+package com.atuldwivedi.quickcart.component.order.service;
 
 import java.util.List;
 
-import com.atuldwivedi.quickcart.order.domain.Order;
+import com.atuldwivedi.quickcart.component.order.domain.Order;
 
 public interface OrderService {
 	

@@ -1,8 +1,8 @@
-package com.atuldwivedi.quickcart.order.dao;
+package com.atuldwivedi.quickcart.component.order.dao;
 
 import java.util.List;
 
-import com.atuldwivedi.quickcart.order.domain.Order;
+import com.atuldwivedi.quickcart.component.order.domain.Order;
 
 public interface OrderDao {
 

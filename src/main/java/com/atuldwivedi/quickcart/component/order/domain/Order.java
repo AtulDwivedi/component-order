@@ -1,4 +1,4 @@
-package com.atuldwivedi.quickcart.order.domain;
+package com.atuldwivedi.quickcart.component.order.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

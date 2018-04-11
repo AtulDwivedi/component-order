@@ -1,4 +1,4 @@
-package com.atuldwivedi.quickcart.order.rest;
+package com.atuldwivedi.quickcart.component.order.rest;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.atuldwivedi.quickcart.order.domain.Order;
-import com.atuldwivedi.quickcart.order.mock.OrderData;
-import com.atuldwivedi.quickcart.order.service.OrderService;
+import com.atuldwivedi.quickcart.component.order.domain.Order;
+import com.atuldwivedi.quickcart.component.order.mock.OrderData;
+import com.atuldwivedi.quickcart.component.order.service.OrderService;
 
 @RestController
 @RequestMapping("/order")
