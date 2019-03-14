@@ -1,12 +1,12 @@
-package com.atuldwivedi.quickcart.component.order.service;
+package com.routinecart.component.order.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.atuldwivedi.quickcart.component.order.dao.OrderDao;
-import com.atuldwivedi.quickcart.component.order.domain.Order;
+import com.routinecart.component.order.dao.OrderDao;
+import com.routinecart.component.order.domain.Order;
 
 @Service
 public class OrderServiceImpl implements OrderService {

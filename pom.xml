@@ -3,13 +3,14 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.atuldwivedi.quickcart</groupId>
+	<groupId>com.routinecart</groupId>
 	<artifactId>component-order</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>component-order</name>
-	<description>Order component of QuickCart</description>
+	<description>Order component of RoutineCart</description>
+	<url>www.routinecart.com</url>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

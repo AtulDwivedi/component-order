@@ -1,4 +1,4 @@
-package com.atuldwivedi.quickcart.component.order;
+package com.routinecart.component.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

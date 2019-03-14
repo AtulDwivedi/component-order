@@ -1,12 +1,12 @@
-package com.atuldwivedi.quickcart.component.order.dao;
+package com.routinecart.component.order.dao;
 
 import java.util.List;
 
+import com.routinecart.component.order.domain.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.atuldwivedi.quickcart.component.order.domain.Order;
-import com.atuldwivedi.quickcart.component.order.mock.OrderData;
+import com.routinecart.component.order.mock.OrderData;
 
 @Repository
 public class OrderDaoImpl implements OrderDao {

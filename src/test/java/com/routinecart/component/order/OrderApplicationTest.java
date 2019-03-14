@@ -1,4 +1,4 @@
-package com.atuldwivedi.quickcart.order;
+package com.routinecart.component.order;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ComponentOrderApplicationTests {
+public class OrderApplicationTest {
 
 	@Test
 	public void contextLoads() {

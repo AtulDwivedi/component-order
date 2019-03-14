@@ -1,8 +1,8 @@
-package com.atuldwivedi.quickcart.component.order.rest;
+package com.routinecart.component.order.rest;
 
-import com.atuldwivedi.quickcart.component.order.domain.Order;
-import com.atuldwivedi.quickcart.component.order.mock.OrderData;
-import com.atuldwivedi.quickcart.component.order.service.OrderService;
+import com.routinecart.component.order.domain.Order;
+import com.routinecart.component.order.mock.OrderData;
+import com.routinecart.component.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

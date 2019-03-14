@@ -1,13 +1,10 @@
-package com.atuldwivedi.quickcart.component.order.mock;
+package com.routinecart.component.order.mock;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import com.routinecart.component.order.domain.Order;
 import org.springframework.stereotype.Component;
-
-import com.atuldwivedi.quickcart.component.order.domain.Order;
 
 @Component
 public class OrderData {

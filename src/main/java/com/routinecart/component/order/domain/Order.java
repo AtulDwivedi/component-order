@@ -1,8 +1,7 @@
-package com.atuldwivedi.quickcart.component.order.domain;
+package com.routinecart.component.order.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
 @Data
 @AllArgsConstructor
