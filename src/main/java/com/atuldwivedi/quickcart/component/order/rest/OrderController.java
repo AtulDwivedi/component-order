@@ -25,6 +25,8 @@ public class OrderController {
 	@Autowired
 	DiscoveryClient client;
 
+	@Autowired RestTemplate restTemplate;
+
 	@Autowired
 	private OrderData orderData;
 
@@ -80,7 +82,8 @@ public class OrderController {
 			if (uri != null) {
 				String completePath = "http://"+uri.getHost()+":"+uri.getPort()+path;
 				System.out.println("Complete path------------- "+completePath);
-				return (new RestTemplate()).getForObject(completePath, String.class);
+//				return (new RestTemplate()).getForObject(completePath, String.class);
+				return restTemplate.getForObject("http://" + service + path, String.class);
 			}
 		}
 		return null;
