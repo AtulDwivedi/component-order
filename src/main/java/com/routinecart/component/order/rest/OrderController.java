@@ -1,6 +1,8 @@
 package com.routinecart.component.order.rest;
 
+import com.routinecart.component.order.dao.OrderRepository;
 import com.routinecart.component.order.domain.Order;
+import com.routinecart.component.order.domain.OrderDetail;
 import com.routinecart.component.order.feign.ParcelProvider;
 import com.routinecart.component.order.feign.PaymentProvider;
 import com.routinecart.component.order.mock.OrderData;
@@ -20,10 +22,14 @@ import javax.annotation.PostConstruct;
 import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/order")
 public class OrderController {
+
+    @Autowired
+    private OrderRepository orderRepository;
 
     @Autowired
     private DiscoveryClient client;
@@ -124,6 +130,28 @@ public class OrderController {
             }
         }
         return null;
+    }
+
+    @PostMapping
+    public void saveOrder(@RequestBody OrderDetail orderDetail) {
+        orderRepository.save(orderDetail);
+    }
+
+    @GetMapping("/one/{id}")
+    public OrderDetail getOrder(@PathVariable UUID id) {
+        System.out.println("---"+id);
+        return orderRepository.findById(id).get();
+    }
+
+    @GetMapping("/name/{customerId}")
+    public List<OrderDetail> getOrdersByName(@PathVariable String customerId) {
+        System.out.println("---"+customerId);
+        return orderRepository.findByCustomerId(customerId);
+    }
+
+    @GetMapping
+    public List<OrderDetail> getAllOrders() {
+        return orderRepository.findAll();
     }
 
 }
