@@ -26,7 +26,7 @@ public class OrderOptionServiceImpl implements OrderOptionService {
 
     @Override
     @HystrixCommand(fallbackMethod = "getDefaultParcelMode")
-    public String getPrcelOption() {
+    public String getParcelOption() {
         return parcelProvider.getMode();
     }
 

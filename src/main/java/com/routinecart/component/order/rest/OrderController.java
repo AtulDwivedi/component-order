@@ -89,7 +89,7 @@ public class OrderController {
     @GetMapping("/options")
     public @ResponseBody
     String getOrderOptions() {
-        return orderOptionService.getPrcelOption() + " " + orderOptionService.getPaymentOption();
+        return orderOptionService.getParcelOption() + " " + orderOptionService.getPaymentOption();
     }
 
     @GetMapping("/options/thru/feign")
